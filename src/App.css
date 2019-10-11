@@ -1,22 +1,79 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
+html, body, #root {
+  min-height: 100%;
+  background-color: rgb(51, 55, 64);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  margin: 80px auto;
+  max-width: 600px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.titulo-content > span {
+  margin-bottom: 40px;
+  font-family: 'Encode Sans Condensed', Arial, Helvetica, sans-serif;
+  color: #ddd;
+  font-size: 20px;  
+}
+
+.data-titulo {
+  float: right;
+}
+
+.content {
+  width: 100%;
+  margin-top: 50px;
+  border-radius: 4px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content input {
+  margin-bottom: 20px;
+  border: 0;
+  border-radius: 2px;
+  height: 45px;
+  padding: 0 15px;
+  font-size: 16px;
+}
+.content input.item-novo {
+  width: 80%;
+  margin-right: 20px;
+  color: white;
+  background-color: rgb(46, 45, 51);
+  font-weight: 700;
+  font-family: 'Encode Sans Condensed', Arial, Helvetica, sans-serif;
+}
+
+.btn {
+  margin-bottom: 20px;
+  border: 0;
+  border-radius: 2px;
+  height: 45px;
+  padding: 0 15px;
+  font-size: 16px;
+  background-color: gray;
+}
+.btn.btn-ok {
+  color: white;
+  background-color: rgb(113, 70, 197);
+  font-weight: 700;
+  width: 16%;
+}
+
+.btn:hover {
+  background-color: rgb(147, 70, 182);
 }

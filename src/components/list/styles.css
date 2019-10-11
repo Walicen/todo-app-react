@@ -1,0 +1,15 @@
+
+
+ul {
+    list-style: none;
+}
+
+.task-content {
+    color: #ddd;
+
+}
+
+hr {
+    margin: 10px 0;
+    border-color: #ddd;
+}
