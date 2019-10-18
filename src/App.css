@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:400,700&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -21,15 +20,30 @@ html, body, #root {
   align-items: center;
 }
 
-.titulo-content > span {
+.titulo-content span {
   margin-bottom: 40px;
   font-family: 'Encode Sans Condensed', Arial, Helvetica, sans-serif;
   color: #ddd;
-  font-size: 20px;  
+  font-size: 20px;
 }
 
 .data-titulo {
   float: right;
+  padding: 0 10px;
+}
+
+.list-checked:hover {
+  color: rgb(99, 166, 78)
+}
+
+.list-unchecked:hover {
+  color: rgb(239, 192, 47);
+}
+
+.no-content {
+  color: rgba(221, 221, 221, 0.288);
+  text-align: center;
+  padding: 30px;
 }
 
 .content {
@@ -42,24 +56,29 @@ html, body, #root {
 }
 
 .content input {
-  margin-bottom: 20px;
   border: 0;
   border-radius: 2px;
   height: 45px;
   padding: 0 15px;
   font-size: 16px;
 }
-.content input.item-novo {
-  width: 80%;
-  margin-right: 20px;
-  color: white;
+
+.input-content form {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.input-content input.item-novo {
+  width: 90%;
+  color: #ddd;
   background-color: rgb(46, 45, 51);
   font-weight: 700;
   font-family: 'Encode Sans Condensed', Arial, Helvetica, sans-serif;
 }
 
 .btn {
-  margin-bottom: 20px;
   border: 0;
   border-radius: 2px;
   height: 45px;
@@ -67,13 +86,13 @@ html, body, #root {
   font-size: 16px;
   background-color: gray;
 }
+
 .btn.btn-ok {
   color: white;
   background-color: rgb(113, 70, 197);
   font-weight: 700;
-  width: 16%;
 }
 
-.btn:hover {
-  background-color: rgb(147, 70, 182);
+.btn-ok:hover {
+  background-color: rgb(120, 53, 151);
 }

@@ -6,7 +6,34 @@ ul {
 
 .task-content {
     color: #ddd;
+    display: flex;
+    flex-wrap: inherit;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.check-button {
+    margin: 5px;
+}
+
+.check-button:hover {
+    color: rgb(99, 166, 78);
+}
+
+.trash-button {
+    margin: 5px;
+}
+
+.trash-button:hover {
+    color: rgb(190, 56, 71);;
+}
+
+.text-content {
+    width: 100%;
+    margin: 5px;
+    padding: 10px;
 }
 
 hr {

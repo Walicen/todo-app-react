@@ -1,18 +1,20 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCheckCircle, faTrashAlt } from '@fortawesome/free-regular-svg-icons'
 
 import './styles.css';
 
-export default function ListTasks() {
+
+export default function ListTasks(props) {
+
   return (
     <ul>
       <li>
         <hr />
-        <p className="task-content"><button>+</button>   Content man <button>-</button> </p>
-      </li>
-
-      <li>
-        <hr />
-        <p className="task-content"><button>+</button>   Content man <button>-</button> </p>
+        <div className="task-content">
+          <FontAwesomeIcon className="check-button" icon={faCheckCircle} />
+          <div className="text-content">{props.content} </div>
+          <FontAwesomeIcon className="trash-button" icon={faTrashAlt} /> </div>
       </li>
     </ul>
   );
