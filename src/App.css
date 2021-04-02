@@ -21,10 +21,10 @@ html, body, #root {
 }
 
 .titulo-content span {
-  margin-bottom: 40px;
+  margin-bottom: 5vh;
   font-family: 'Encode Sans Condensed', Arial, Helvetica, sans-serif;
   color: #ddd;
-  font-size: 20px;
+  font-size: 1.3rem;
 }
 
 .data-titulo {

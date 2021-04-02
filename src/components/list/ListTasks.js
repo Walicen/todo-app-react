@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheckCircle, faTrashAlt } from '@fortawesome/free-regular-svg-icons'
+import { faCheckCircle, faTrashAlt } from '@fortawesome/free-solid-svg-icons'
 
 import './styles.css';
 
